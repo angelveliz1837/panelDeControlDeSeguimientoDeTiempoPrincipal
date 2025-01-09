@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="grid">
+    <section class="bloque">
+      <div class="arriba">
+        <div class="derecha">
+          <img src="images/image-jeremy.png" alt="jeremy">
+        </div>
+        <div class="izquierda">
+          <p>Report for</p>
+          <h2>Jeremy Robson</h2>
+        </div>
+      </div>
+      <div class="abajo">
+        <ul>
+          <li id="daily" class="active">Daily</li>
+          <li id="weekly">Weekly</li>
+          <li id="monthly">Monthly</li>
+        </ul>
+      </div>
+    </section>
+    <section class="cajas" id="activity-cards">
+      <div class="caja1">
+        <div class="subcaja">
+          <img class="imagen" src="images/icon-work.svg" alt="Work">
+        </div>
+        <div class="caja">
+          <div class="linea">
+            <div class="linea1">
+              <h3>Work</h3>
+            </div>
+            <div class="linea2">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+          </div>
+          <div class="texto">
+            <!-- 5hrs <!-- daily -->
+            <!-- Previous - 7hrs <!-- daily -->
+            <div>
+              <h1>32hrs</h1>
+            </div> <!-- weekly -->
+            <div>
+              <p>Previous - 36hrs</p>
+            </div> <!-- weekly -->
+            <!-- 103hrs <!-- monthly -->
+            <!-- Previous - 128hrs <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="caja2">
+        <div class="subcaja">
+          <img class="imagen" src="images/icon-play.svg" alt="Play">
+        </div>
+        <div class="caja">
+          <div class="linea">
+            <div class="linea1">
+              <h3>Play</h3>
+            </div>
+            <div class="linea2">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+          </div>
+          <div class="texto">
+            <!-- 1hr <!-- daily -->
+            <!-- Previous - 2hrs <!-- daily -->
+            <div>
+              <h1>10hrs</h1>
+            </div> <!-- weekly -->
+            <div>
+              <p>Previous - 8hrs</p>
+            </div> <!-- weekly -->
+            <!-- 23hrs <!-- monthly -->
+            <!-- Previous - 29hrs <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="caja3">
+        <div class="subcaja">
+          <img class="imagen" src="images/icon-study.svg" alt="Study">
+        </div>
+        <div class="caja">
+          <div class="linea">
+            <div class="linea1">
+              <h3>Study</h3>
+            </div>
+            <div class="linea2">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+          </div>
+          <div class="texto">
+            <!-- 0hrs <!-- daily -->
+            <!--- Previous - 1hr <!-- daily -->
+            <div>
+              <h1>4hrs</h1>
+            </div> <!-- weekly -->
+            <div>
+              <p>Previous - 7hrs</p>
+            </div> <!-- weekly -->
+            <!-- 13hrs <!-- monthly -->
+            <!-- Previous - 19hrs <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="caja4">
+        <div class="subcaja2">
+          <img class="imagen" src="images/icon-exercise.svg" alt="Exercise">
+        </div>
+        <div class="caja">
+          <div class="linea">
+            <div class="linea1">
+              <h3>Exercise</h3>
+            </div>
+            <div class="linea2">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+          </div>
+          <div class="texto">
+            <!-- 1hr <!-- daily -->
+            <!-- Previous - 1hr <!-- daily -->
+            <div>
+              <h1>4hrs</h1>
+            </div> <!-- weekly -->
+            <div>
+              <p>Previous - 5hrs</p>
+            </div> <!-- weekly -->
+            <!-- 11hrs <!-- monthly -->
+            <!-- Previous - 18hrs <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="caja5">
+        <div class="subcaja3">
+          <img class="imagen" src="images/icon-social.svg" alt="Social">
+        </div>
+        <div class="caja">
+          <div class="linea">
+            <div class="linea1">
+              <h3>Social</h3>
+            </div>
+            <div class="linea2">
+              <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+          </div>
+          <div class="texto">
+            <!-- 1hr <!-- daily -->
+            <!-- Previous - 3hrs <!-- daily -->
+            <div>
+              <h1>5hrs</h1>
+            </div> <!-- weekly -->
+            <div>
+              <p>Previous - 10hrs</p>
+            </div> <!-- weekly -->
+            <!-- 21hrs <!-- monthly -->
+            <!-- Previous - 23hrs <!-- monthly -->
+          </div>
+        </div>
+      </div>
+      <div class="caja6">
+        <div class="subcaja3">
+          <img class="imagen" src="images/icon-self-care.svg" alt="Self Care">
+        </div>
+        <div class="caja">
+          <div class="linea">
+            <div class="linea1">
+              <h3>Self Care</h3>
+            </div>
+            <div class="linea2">
+              <img class="puntos" src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+            </div>
+          </div>
+          <div class="texto">
+            <!-- 0hrs <!-- daily -->
+            <!-- Previous - 1hr <!-- daily -->
+            <div>
+              <h1>2hrs</h1>
+            </div> <!-- weekly -->
+            <div>
+              <p>Previous - 2hrs</p>
+            </div> <!-- weekly -->
+            <!-- 7hrs <!-- monthly -->
+            <!-- Previous - 11hrs <!-- monthly -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Angel Veliz</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
